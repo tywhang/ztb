@@ -1,6 +1,27 @@
 body {
 	margin: 0;
 	font-family: Helvetica Neue;
+	font-weight: lighter;
+	color: white;
+}
+
+.header-nav {
+	background-color: #1cbbb4;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+	}
+
+	p {
+		margin: 0;
+		padding: 16px;
+		font-size: 16pt;
+	}
+
+	.bootcamp-text {
+		font-weight: normal;
+	}
 }
 
 .main-container {
@@ -9,16 +30,58 @@ body {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	width: 100wh;
-	height: 100vh;
+	height: 60vh;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 16px;
 
 	.header-text {
+		font-weight: lighter;
 		margin: 0;
 		display: flex;
-		color: white;
-		font-weight: lighter;
 		font-size: 36pt;
     text-shadow: 2px 2px black;
 	}
+
+	h2 {
+		font-weight: lighter;
+		font-size: 24pt;
+	}
+}
+
+.container {
+	height: 50vh;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
+
+	.text-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h2 {
+			display: flex;
+			font-weight: lighter;
+		}
+	}
+}
+
+.budget-container {
+	background-image: image-url('budget-image.jpg');
+}
+
+.study-container {
+	background-image: image-url('study-image.jpg');
+}
+
+.job-container {
+	background-image: image-url('job-image.jpg');
+}
+
+.salary-container {
+	background-image: image-url('salary-image.jpg');
 }
