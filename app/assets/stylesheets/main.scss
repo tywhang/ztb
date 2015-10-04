@@ -1,11 +1,24 @@
 body {
 	margin: 0;
+	font-family: Helvetica Neue;
 }
 
 .main-container {
+	display: flex;
 	background-image: image-url('header-image.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	width: 100wh;
 	height: 100vh;
+	align-items: center;
+	justify-content: center;
+
+	.header-text {
+		margin: 0;
+		display: flex;
+		color: white;
+		font-weight: lighter;
+		font-size: 36pt;
+    text-shadow: 2px 2px black;
+	}
 }
