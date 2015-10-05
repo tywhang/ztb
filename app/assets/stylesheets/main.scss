@@ -28,9 +28,11 @@ body {
 		flex: 1;
 	}
 
-	a {
+	button {
+		background-color: inherit;
 		color: white;
 		text-decoration: none;
+		border: none;
 	}
 
 	p {
@@ -171,10 +173,14 @@ body {
 		font-weight: lighter;
 	}
 
-	a {
+	button {
 		margin-top: 16px;
 		background-color: #1cbbb4;
 		color: #FFF;
-		padding: 8px 16px;
+		padding: 12px 20px;
+
+		h4 {
+			margin: 0;
+		}
 	}
 }
