@@ -1,3 +1,19 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+$(document).ready(function() {
+	$('.js-create-user').click(function() {
+		var form = $('.new-user-form');
+		var userName = $('.js-user-name');
+		var userEmail = $('.js-user-email');
+
+		$.ajax({
+	      url: '/users',
+	      type: 'POST',
+	      data: {
+	        user_name: userName.val(),
+	        user_email: userEmail.val(),
+	      }
+	    }).success(function() {
+	      jQuery.noConflict();
+	      $('#contact-me-form').modal('hide');
+	    });
+	});
+});

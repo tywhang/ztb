@@ -6,10 +6,10 @@ development:
   username: ted
   password:
 
-test:
+production:
   adapter: postgresql
   encoding: unicode
-  database: ztb_test
+  database: ztb_production
   pool: 5
   username: ted
   password:
