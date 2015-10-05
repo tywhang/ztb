@@ -10,13 +10,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="header-nav">
-	<ul>
-    <li><p>zeroto<span class="bootcamp-text">Bootcamp</span></p></li>
-  </ul>
-</nav>
-
-<%= yield %>
-
+	<div class="content">
+		<nav class="header-nav">
+			<ul>
+		    <li><p>zeroto<span class="bootcamp-text">Bootcamp</span></p></li>
+		  </ul>
+		</nav>
+		<%= yield %>
+	</div>
 </body>
 </html>
