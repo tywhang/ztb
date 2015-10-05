@@ -8,8 +8,10 @@ $(document).ready(function() {
 	      url: '/users',
 	      type: 'POST',
 	      data: {
-	        user_name: userName.val(),
-	        user_email: userEmail.val(),
+          user: {
+            name: userName.val(),
+            email: userEmail.val()
+          }
 	      }
 	    }).success(function() {
 	      jQuery.noConflict();
