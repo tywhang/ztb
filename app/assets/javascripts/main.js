@@ -13,9 +13,15 @@ $(document).ready(function() {
             email: userEmail.val()
           }
 	      }
-	    }).success(function() {
+	    }).done(function() {
 	      jQuery.noConflict();
 	      $('#contact-me-form').modal('hide');
-	    });
+	    }).fail(function(res) {
+        var errors = res.responseJSON.errors;
+        _.each(errors, function(error) {
+          $('.new-user-form').append("<p class='error'>" + error + "</p>")
+        });
+        $('.error').fadeOut({ duration: 2000 })
+      });
 	});
 });
