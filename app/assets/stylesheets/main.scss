@@ -74,11 +74,14 @@ body {
 }
 
 .content-container {
-	padding: 16px 20%;
 	background-color: #448ccb;
 	margin-bottom: 16px;
 	text-align: justify;
+	padding: 16px 5%;
 
+	@media screen and (min-width: 480px) {
+    padding: 16px 22%;
+  }
 	.content-header {
 		margin-bottom: 32px;
 	}
