@@ -4,7 +4,7 @@ class UserMailer < ApplicationMailer
 
     mail(
       from: "zerotobootcamp@gmail.com",
-      to: "taeywhang@gmail.com",
+      to: @user.email,
       subject: "Welcome to Zero To Bootcamp!"
     )
   end
