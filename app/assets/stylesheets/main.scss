@@ -1,3 +1,8 @@
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 992px;
+$large-desktop-width: 1200px;
+
 body {
 	background-color: #000;
 	font-family: Helvetica Neue;
@@ -79,9 +84,14 @@ body {
 	text-align: justify;
 	padding: 16px 5%;
 
-	@media screen and (min-width: 480px) {
+	@media screen and (min-width: $mobile-width) {
+    padding: 16px 10%;
+  }
+
+  @media screen and (min-width: $tablet-width) {
     padding: 16px 22%;
   }
+
 	.content-header {
 		margin-bottom: 32px;
 	}
@@ -100,7 +110,8 @@ body {
 	}
 
 	h4 {
-		margin-top: 30px;
+		font-weight: 700;
+		margin-top: 48px;
 	}
 
 	img {
